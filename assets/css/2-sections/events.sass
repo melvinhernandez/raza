@@ -1,0 +1,137 @@
+section.events
+  min-height: 500px
+  text-align: center
+  padding: 20px 0 80px
+  background-color: $clouds
+  
+  h2
+    color: $grue
+  
+  .events-contents
+    width: 100%
+
+
+    #familia-orientation
+      height: 370px
+      position: relative
+      background:
+        image: url(../img/familia-bg.jpg)
+        size: cover
+        position: center
+        repeat: no-repeat
+      
+      .featured-wrapper
+        position: absolute
+        bottom: 20
+        left: 30
+
+      .rsvp-wrapper
+        position: absolute
+        bottom: 25
+        right: 30
+
+        a
+          color: $clouds
+          font-size: 1.3em
+          margin: 0
+          padding: 0
+          text-decoration: underline
+
+          &:visited
+            color: $clouds
+          &:hover
+            color: white
+
+
+    #voto-latino
+      background:
+        image: url(../img/voto-latino-bg.jpg)
+        size: cover
+        position: center
+        repeat: no-repeat
+
+    .main-event
+      width: 50%
+      height: 370px
+      box-sizing: border-box
+      text-align: left
+      overflow: hidden
+
+      h3
+        font-size: 2em
+        color: white
+        margin: 0
+
+      h3.event-title
+        font-weight: $strong
+
+      h3.event-date
+        font-weight: $light
+
+      &:hover .voto-main
+        margin-top: 0
+
+      .voto-main
+        width: 100%
+        padding: 30px
+        box-sizing: border-box
+        margin-top: 250px
+        transition: margin-top ease-in-out 300ms
+
+
+        p
+          font-size: 1.1em
+          line-height: 1.4em
+          color: white
+          margin-bottom: 5px
+
+        a.after-text
+          color: white
+          font-size: 1.1em
+          margin: 0
+          padding: 0
+          text-decoration: underline
+
+        a
+          text-decoration: none
+
+    .side-events
+      width: 50%
+      height: 370px
+
+  // Responsive Event Section
+
+  @media (max-width: $break-tablet-max)
+
+    .events-contents
+      padding: 0 10px
+      box-sizing: border-box
+
+      #familia-orientation
+        margin-top: 30px
+
+      .main-event
+        width: 100%
+        box-sizing: border-box
+        height: auto
+        overflow: visible
+
+        h3
+          font-size: 1.7em
+
+        .voto-main
+          margin-top: 0
+          min-height: 370px
+
+      .side-events
+        width: 100%
+
+      @media (max-width: $break-mobile-max)
+        #familia-orientation
+          .featured-wrapper
+            bottom: 70
+
+          .rsvp-wrapper
+            position: absolute
+            bottom: 25
+            left: 30

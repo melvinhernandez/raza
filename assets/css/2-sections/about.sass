@@ -1,0 +1,104 @@
+section.about
+  background-color: $clouds
+  text-align: center
+  width: 100%
+
+  .about-content
+    color: white
+    width: 100%
+    height: 400px
+    position: relative
+    overflow: hidden
+
+    .raza-bg-about
+      width: 50%
+      height: 100%
+      background:
+        image: url(../img/raza-about.jpg)
+        position: center
+        size: cover
+
+
+    .bridges-bg-about
+      width: 50%
+      height: 100%
+      background:
+        image: url(../img/bridges-about.jpg)
+        position: center
+        size: cover
+
+    .desktop
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      height: 100%
+
+      h3
+        font-size: 2em
+        font-weight: $light
+        text-align: center
+
+      p, a
+        line-height: 1.4em
+
+      a
+        color: white
+        font-weight: 400
+
+      .both-about
+        width: 50%
+        height: 100%
+        padding: 20px 40px
+        box-sizing: border-box
+        text-align: left
+        font-weight: $light
+
+  // Responsive About
+  @media (max-width: $break-tablet-max)
+    .about-content
+      height: auto
+
+      .raza-bg-about,
+      .bridges-bg-about
+        display: none
+
+
+      .desktop
+        width: 100%
+        height: auto
+        position: relative
+        
+        .both-about
+          width: 100%
+          height: auto
+          padding: 20px 40px 60px
+
+        .mobile-raza
+          background:
+            image: url(../img/raza-about.jpg)
+            position: center
+            size: cover
+            repeat: no-repeat
+
+        .mobile-bridges
+          background:
+            image: url(../img/bridges-about.jpg)
+            position: center
+            size: cover
+            repeat: no-repeat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

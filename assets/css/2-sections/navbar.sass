@@ -1,0 +1,121 @@
+nav.navigation
+  width: 100%
+  height: 55px
+  background-color: $grue
+  border-bottom: 5px solid $light-grue
+
+  .nav-wrapper
+    max-width: $break-desktop
+    margin: 0 auto
+    position: relative
+    display: flex
+
+    a.logo img
+      max-height: 40px
+      width: auto
+      padding: 10px 15px
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      a
+        color: $offwhite
+        text-decoration: none
+        font-size: 1em
+
+        li
+          height: 55px
+          margin: 0
+          box-sizing: border-box
+          padding: 18px 20px
+          text-align: center
+          transition: background-color 200ms ease-in-out
+
+          &:hover
+            background-color: $light-grue
+
+    .main-nav
+      display: flex
+      flex-direction: row
+
+    .mobile-nav
+      display: none
+      width: 100%
+      position: absolute
+      top: 60
+      left: 0
+      background-color: $grue
+      z-index: 1
+
+      li
+        border-bottom: 1px solid $light-grue
+
+      .social-icons-mobile
+        width: 100% 
+        padding: 20px 0
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        a
+          display: block
+          margin: 0 20px
+          transition: opacity 200ms ease-in-out
+          opacity: 0.6
+
+          &:hover
+            opacity: 1
+
+    .social-icons
+      width: 80px
+      padding: 10px 10px
+      position: absolute
+      right: 0
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      a
+        transition: opacity 200ms ease-in-out
+        opacity: 0.6
+
+        &:hover
+          opacity: 1
+
+    .mobile-toggle
+      display: none
+
+    // Navigation Responsive
+    @media (max-width: $break-tablet-max)
+      .main-nav, .mobile-nav
+        display: none
+
+      .social-icons
+        display: none
+
+      .mobile-toggle
+        width: 40px
+        height: 55px
+        position: absolute
+        right: 20
+        align-self: flex-start
+        cursor: pointer
+        display: flex
+        align-items: center
+
+        span,
+        span:before,
+        span:after
+          content: ""
+          display: block
+          height: 2px
+          width: 100%
+          background: #FFF
+          position: relative
+
+        span:before
+          top: 12
+        span:after
+          bottom: 15

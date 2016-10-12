@@ -1,0 +1,45 @@
+footer.footer
+  width: 100%
+  padding: 40px 0
+
+  .desiigner-panda
+    flex: 1
+    text-align: center
+    color: $grue
+
+    a
+      color: $light-grue
+      text-decoration: none
+
+      &:visited
+        color: $light-grue
+
+      &:active, &:hover
+        color: $grue
+
+      span, img
+        opacity: 0.7
+        transition: opacity 200ms ease-in-out
+
+      &:active, &:hover, .desiigner-panda
+        border-bottom: 2px solid $grue
+
+      &:hover, span
+        img
+          opacity: 1
+
+    span, img
+      max-width: 18px
+    
+  .disclaimer
+    flex: 3
+    color: $grue
+    text-align: center
+
+  .ocf-disclaimer
+    flex: 1
+    text-align: center
+
+  @media (max-width: $break-tablet-max)
+    .ocf-disclaimer, .disclaimer
+      margin: 0 3px 20px

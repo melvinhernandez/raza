@@ -1,0 +1,79 @@
+  // Under side-events
+      ul.events-nav
+        width: 35%
+        margin: 0
+        list-style: none
+        padding: 0
+        text-align: left
+        justify-content: space-between
+        background-color: $light-gold
+        border-right: 5px solid $gold
+        box-sizing: border-box
+
+        li
+          padding: 15px 10px
+          box-sizing: border-box
+          color: white
+          transition: background-color ease-in-out 200ms
+          
+          .nav-title
+            font-size: 1.3em
+            margin-bottom: 5px
+
+          .nav-date
+            font-size: 1em
+            font-weight: $light
+
+          &:hover
+            background-color: $mid-gold
+            cursor: pointer
+
+        li.selected
+          background-color: $gold
+          border-bottom: none
+      .events-info
+        width: 65%
+        border: 1px solid $light-grue
+        position: relative
+
+        .side-event-content
+          position: absolute
+          top: 0
+          height: 100%
+          border: 1px dashed $grue
+          width: 100%
+
+        <!-- <div class="side-events">
+          <ul class="events-nav flex-col">
+            <li class="selected">
+              <div class="nav-title">Raza Day 2016</div>
+              <div class="nav-date">November 15th, 2016</div>
+            </li>
+            <li>
+              <div class="nav-title">Raza Carne Asada</div>
+              <div class="nav-date">November 15th, 2016</div>
+            </li>
+            <li>
+              <div class="nav-title">La Lucha Sigue</div>
+              <div class="nav-date">November 15th, 2016</div>
+            </li>
+            <li>
+              <div class="nav-title">TED: Transfer Empowerment Day</div>
+              <div class="nav-date">November 15th, 2016</div>
+            </li>
+          </ul>
+          <div class="events-info">
+            <div class="side-event-content" data-info="event-1">
+
+            </div>
+            <div class="side-event-content" data-info="event-2">
+              Raza Carne Asada
+            </div>
+            <div class="side-event-content" data-info="event-3">
+              La Lucha Sigue
+            </div>
+            <div class="side-event-content" data-info="event-4">
+              TED: Transfer Empowerment Day
+            </div>
+          </div>
+        </div> -->
